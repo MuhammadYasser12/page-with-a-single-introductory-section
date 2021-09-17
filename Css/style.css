@@ -1,0 +1,117 @@
+/* variable */
+:root {
+  --Violet: hsl(257, 40%, 49%);
+  --SoftMagenta: hsl(300, 69%, 71%);
+}
+
+/* Start Global */
+body {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+p {
+  opacity: 0.7;
+  font-size: 0.9em;
+}
+/* End Global */
+
+/* Main */
+main {
+  background-image: url(../images/bg-desktop.svg);
+  background-color: var(--Violet);
+  padding: 40px;
+  height: 100%;
+  position: relative;
+}
+
+main > img {
+  width: 150px;
+}
+
+.contant {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-content: space-between;
+  padding: 30px 0 10px;
+}
+
+.contant img {
+  max-width: 95%;
+}
+
+.txt {
+  padding: 50px;
+  line-height: 1.5;
+  color: white;
+}
+
+button {
+  background-color: white;
+  color: var(--Violet);
+  margin-top: 20px;
+  padding: 10px 70px;
+  border-color: transparent;
+  border-radius: 30px;
+  box-shadow: 3px 4px 20px 0 rgb(0 0 0 / 5%), 1px 5px 20px 0 rgb(0 0 0 / 15%);
+}
+
+button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: var(--SoftMagenta);
+}
+
+.icons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+i {
+  color: white;
+  border: 1px white solid;
+  border-radius: 50%;
+  padding: 8px 9px;
+  margin: 10px 5px;
+}
+
+i:first-child {
+  padding: 8px 11px;
+}
+
+i:hover {
+  cursor: pointer;
+  color: var(--SoftMagenta);
+  border-color: var(--SoftMagenta);
+}
+
+@media (max-width: 768px) {
+  body {
+    height: 110vh;
+  }
+  .txt {
+    padding: 40px 0;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+  }
+}
